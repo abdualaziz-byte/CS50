@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link href="styles.css" rel="stylesheet">
+
+    <title>Academic Life</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Welcome to my academic life!</h1>
+
+        <h2>This page will showcase my academic achievements.</h2>
+
+        <hr>
+
+        <p>An image of my graduation certificate:</p>
+
+        <img src="download.webp" alt="Photo of my certificate">
+
+        <hr>
+
+        <p>List of highest grades:</p>
+
+        <ol>
+            <li>High school: 98.6</li>
+            <li>General Aptitude Test: 98</li>
+            <li>Qiyas test: 97</li>
+        </ol>
+
+        <p>Calculate my average based on the percentage values entered:</p>
+
+        <input id="highschool" placeholder="% of high school out of 100">
+
+        <input id="gat" placeholder="% of GAT out of 100">
+
+        <input id="qiyas" placeholder="% of Qiyas out of 100">
+
+        <button id="submitter">Calculate</button>
+
+        <hr>
+
+        <a href="index.html">Home</a> |
+        <a href="family.html">Family</a> |
+        <a href="personal.html">Personal Life</a>
+
+    </div>
+
+    <script>
+        document.querySelector("#submitter").onclick = function()
+        {
+            let HS = Number(document.querySelector("#highschool").value);
+            let qiyas = Number(document.querySelector("#qiyas").value);
+            let gat = Number(document.querySelector("#gat").value);
+
+            if (HS + qiyas + gat !== 100)
+            {
+                alert("Values combined must be equal to 100!");
+            }
+            else
+            {
+                let cumulative = (HS * 98.6 / 100) +
+                                  (qiyas * 97 / 100) +
+                                  (gat * 98 / 100);
+
+                alert("Your percentage based on the entered values is: " + cumulative);
+            }
+        };
+    </script>
+
+</body>
+</html>

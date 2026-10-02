@@ -1,0 +1,25 @@
+HTML tags:
+1. h1
+2. h2
+3. p
+4. hr
+5. img
+6. ol
+7. ul
+8. li
+9. input
+10. button
+11. a
+
+CSS properties:
+1. margin-top
+2. color
+3. font-size
+4. width
+5. border-radius
+
+JavaScript:
+I used JavaScript to create a calculator on my Academic Life page that calculates my percentage based on the values entered by the user.
+
+Bootstrap:
+I used Bootstrap to help style and structure my webpages.
